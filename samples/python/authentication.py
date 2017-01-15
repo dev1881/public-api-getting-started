@@ -1,4 +1,4 @@
-# Copyright 2016 Google Inc.
+# Copyright 2017 DM1881 AS.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,8 +14,6 @@
 
 import jwt
 import datetime
-import argparse
-import calendar
 from datetime import timedelta
 
 def main():
