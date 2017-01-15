@@ -1,0 +1,15 @@
+{
+  "name": "dm1881-jwt-authentication",
+  "version": "1.0.0",
+  "description": "Package for generating JWT tokens",
+  "main": "authentication.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "eap@1881.no",
+  "license": "ISC",
+  "dependencies": {
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.17.1"
+  }
+}
