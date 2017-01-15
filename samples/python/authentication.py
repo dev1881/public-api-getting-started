@@ -28,7 +28,7 @@ def unix_time_millis(dt):
     return int((dt - epoch).total_seconds())
 
 
-def generateToken(api_user=None, api_key=None):
+def generateToken(api_user=None, api_key=None, days=30):
 
     if api_user == None or api_key == None:
         print 'user and key needs to be set'
@@ -39,7 +39,7 @@ def generateToken(api_user=None, api_key=None):
     audience = 'VK1881Services'
 
     today = datetime.datetime.today()
-    next_30days = today + timedelta(days=30)
+    next_30days = today + timedelta(days=days)
 
     expires = unix_time_millis(next_30days)
     now = unix_time_millis(datetime.datetime.utcnow())
